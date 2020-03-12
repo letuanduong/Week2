@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>var data type operator</title>
+</head>
+<body>
+    <h2>CACULATOR</h2>
+    <table border="1">
+        <tr>
+            <td colspan="2">
+                <input type="text" name="FirstNumber" id="1"\>
+            </td>
+            <td colspan="2">
+                <input type="text" name="SecondNumber" id ="2"\>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Addition" onclick="Addition()" \>
+
+                <script>
+                    function Addition() {
+                        let a = document.getElementById("1").value;
+                        let b = document.getElementById("2").value;
+                        let c = Number(a) + Number(b);
+                        document.getElementById("Addition").innerHTML = c;
+                    }
+                </script>
+            </td>
+            <td>
+                <input type="button" value="Subtraction" onclick="Subtraction()" \>
+                <script>
+                function Subtraction() {
+                    let a = document.getElementById("1").value;
+                    let b = document.getElementById("2").value;
+                    let c = Number(a) - Number(b);
+                    document.getElementById("Subtraction").innerHTML = c;
+                }
+                </script>
+            </td>
+            <td>
+                <input type="button" value="Multiplication" onclick="Multiplication()" \>
+                <script>
+                    function Multiplication() {
+                        let a = document.getElementById("1").value;
+                        let b = document.getElementById("2").value;
+                        let c = Number(a) * Number(b);
+                        document.getElementById("Multiplication").innerHTML = c;
+                    }
+                </script>
+            </td>
+            <td>
+                <input type="button" value="Division" onclick="Division()" \>
+                <script>
+                    function Division() {
+                        let a = document.getElementById("1").value;
+                        let b = document.getElementById("2").value;
+                        let c = Number(a) / Number(b);
+                        document.getElementById("Division").innerHTML = c;
+                    }
+                </script>
+            </td>
+        </tr>
+    </table>
+    <h3>Result: </h3>
+    Addition: <span id="Addition"></span><br>
+    Subtraction: <span id="Subtraction"></span><br>
+    Multiplication: <span id="Multiplication"></span><br>
+    Division: <span id="Division"></span>
+</body>
+</html>
