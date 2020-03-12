@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TINH CHU VI DIEN TICH HINH TRON</title>
+</head>
+<body>
+    <p>Nhap chieu dai hai canh</p>
+    height length: <input type="number" value="" name="" id="height"\>
+    width length: <input type="number" value="" name="" id="width" \>
+    <br>
+    <script>
+        let height = document.getElementById('height').value;
+        let width = document.getElementById('width').value;
+        let area = height * width;
+        let perimeter = 2*height+ 2*width;
+        document.getElementById('area').innerHTML = area;
+        document.getElementById('perimeter').innerHTML = perimeter;
+    </script>
+    <input type="button" id="area" value="area" name = "area" onclick="document.write('the area is:' +area)" \>
+    <input type="button" id="perimeter" value="perimeter" name="perimeter" onclick="document.write('the perimeter is:' +perimeter)" \>
+</body>
+</html>
