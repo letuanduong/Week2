@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAU TRUC DIEU KIEN 02</title>
+</head>
+<body>
+    <script>
+        function PhuongTrinhBacMot(a, b, c) {
+            if(a !== '0') {
+                let x = (c - b) / a;
+                alert('nghiem phuong trinh bac 1 là: ' + x);
+            }
+            else {
+                alert('Moi nhap he so a khác không');
+                return;
+            }
+        }
+
+    </script>
+    <script>
+        function PhuongTrinhBacHai(a, b, c) {
+            let delta = b*b-4*a*c;
+            if(delta < 0)
+                alert('phuong trinh vo nghiem');
+            else if(delta === 0)
+                alert('phuong trinh co nghiem kep:' +(-b/(2*a)));
+            else
+                alert('phuong trinh co 2 nghiem');
+                alert('X1: ' +((-b-Math.sqrt(delta))/(2*a)));
+                alert('X2: ' +((-b+Math.sqrt(delta))/(2*a)));
+        }
+
+    </script>
+
+    <input type="number" value="" name="" id="a" \>
+    <input type="number" value="" name="" id="b" \>
+    <input type="number" value="" name="" id="c" \>
+    <br>
+    <input type="button" value="Giai Phuong Trinh bac 1" name=""
+           onclick="PhuongTrinhBacMot(document.getElementById('a').value, document.getElementById('b').value, document.getElementById('c').value)" \>
+    <br>
+    <input type="button" value="Giai Phuong Trinh bac 2" name=""
+           onclick="PhuongTrinhBacHai(document.getElementById('a').value, document.getElementById('b').value, document.getElementById('c').value)" \>
+</body>
+</html>
