@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHANGE MONEY</title>
+    <script src="w2_changeMoney.js"></script>
+</head>
+<body>
+    <form>
+        <input type="text" name="mount" id = "mount"\>
+        <select onchange="fromMoney(this)">
+            <option value="">----0----</option>
+            <option value = "1">VietNam</option>
+            <option value = "2">Euro</option>
+            <option value = "3">Dollar</option>
+        </select>
+        <select onchange="toMoney(this)">
+            <option value="">----0----</option>
+            <option value = "1">VietNam</option>
+            <option value = "2">Euro</option>
+            <option value = "3">Dollar</option>
+        </select>
+        <p id="from"></p>
+        <p id = "to"></p>
+        <input type="button" value="ChangeMoney" onclick="ChangeMoney()" \>
+        <br>
+        Result: <p id="result"></p>
+    </form>
+</body>
+</html>
