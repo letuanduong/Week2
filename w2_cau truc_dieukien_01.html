@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau truc dieu kien 01</title>
+</head>
+<body>
+    Input firstNumber: <input type="text" value="" name="input1" id="firstNumber"\>
+    Input SecondNumber: <input type="text" value="" name="input2" id="secondNumber"\>
+    <script>
+        function Division() {//////////kiem tra chia het///
+            let firstNumber = document.getElementById('firstNumber').value;
+            let secondNumber = document.getElementById('secondNumber').value;
+            if (Number(firstNumber) % Number(secondNumber) === 0)
+                alert('firstNumber chia het cho secondNumber');
+            else
+                alert('firstNumber khong chia het cho secondNumber ');
+        }
+    </script>
+    <input type="button" value="kiemtra" name="kiemtra" onclick="Division()"\>
+    <hr>
+    Input Age: <input type="text" value="" name="input2" id="age"\>
+    <script>
+        function CheckAge() {////////check tuoi hoc lop 10
+            let age = document.getElementById('age').value;
+            if (Number(age) > 15)
+                alert('đủ điều kiện học lớp 10');
+            else
+                alert('khong đủ điều kiện học lớp 10');
+        }
+    </script>
+    <input type="button" value="kiem tra" name="input3" onclick="CheckAge()"\>
+    <Hr>
+    Input Number a: <input type="text" value="" name="input11" id="a"\>
+    Input Number b: <input type="text" value="" name="input12" id="b"\>
+    Input Number c: <input type="text" value="" name="input13" id="c"\>
+    <script>
+        function Max() {////ham tinh max 3 số///
+            let a = Number(document.getElementById('a').value);
+            let b = Number(document.getElementById('b').value);
+            let c = Number(document.getElementById('c').value);
+            let max = a;
+            if(max < b)
+                max = b;
+            if(max < c)
+                max = c;
+            alert('so lon nhat trong ba so là: ' +max);
+        }
+    </script>
+    <input type="button" value="kiem tra" name="input3" onclick="Max()"\>
+    <hr>
+    Input điểm kiểm tra: <input type="text" value="" name="input111" id="kt"\>
+    Input điểm giữa kỳ: <input type="text" value="" name="input123" id="ktg"\>
+    Input điểm cuối kỳ: <input type="text" value="" name="input133" id="ktc"\>
+    <script>
+        function XepHocLuc() {////ham tinh max 3 số///
+            let a = Number(document.getElementById('kt').value);
+            let b = Number(document.getElementById('ktg').value);
+            let c = Number(document.getElementById('ktc').value);
+            let medium = (a+b+c)/3;
+            if(medium < 5)
+                alert('hoc luc kem');
+            else if(medium >=5 && medium <=6)
+                alert('hoc luc trung binh');
+            else if(medium > 6 && medium <= 8)
+                alert('hoc luc kha');
+            else
+                alert('hoc luc gioi');
+        }
+    </script>
+    <input type="button" value="kiem tra" name="input3" onclick="XepHocLuc()"\>
+</body>
+</html>
