@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIEM TRUNG BINH</title>
+</head>
+<body>
+    <h3>Nhap diem cac mon hoc</h3>
+    <input type= "text" name="VatLy"  id = "VL" \>
+    <input type="text" name="HoaHoc"  id = "HH" \>
+    <input type="text" name="SinhHoc" id = "SH" \>
+    <script>
+        let MediumScore;
+        let totalScore;
+        let x = Number(document.getElementById('VL').value);
+        let y = Number(document.getElementById('HH').value);
+        let z = Number(document.getElementById('SH').value);
+        MediumScore = (x + y + z)/3;
+        totalScore = (x + y + z);
+        document.getElementById('M').innerHTML = MediumScore;
+        document.getElementById('T').innerHTML = totalScore;
+    </script>
+    <input type="button" name="Medium Score" value="Medium Score" onclick="alert('Medium Score: ' +MediumScore)"/>
+    <input type="button" name="Total Score" value="Total Score" onclick="alert('Total Score: ' +totalScore)"/>
+</body>
+</html>
