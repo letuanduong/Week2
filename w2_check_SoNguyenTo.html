@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim So Nguyen To</title>
+</head>
+<body>
+    <script>
+        let number = prompt('nhap so can kiem tra');
+        let result = 0;
+        while (number < 1) {
+            number = (prompt('nhap lai so > 1'));
+        }
+        for(let i = 2; i <= Math.sqrt(number); i++) {
+            if(Number(number) % i === 0) {
+                result = 1;
+                break;
+            }
+        }
+        result === 1 ? document.write(' khong la so nguyen to ') : document.write('la so nguyen to');
+    </script>
+</body>
+</html>
